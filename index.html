@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internetowy Kantor</title> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="css/body.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <link href="css/header.css" rel="stylesheet">
+    <link href="css/footer.css" rel="stylesheet">
+    <script defer src="js/script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+    <header class="header">
+        <h1>Kalkulator Walut Świata</h1>
+    </header>
+        <form class="form js-form">
+            <fieldset class="form__fieldset">
+                <legend class="form__legend">
+                    Dane wejściowe:
+                </legend>
+                <P>
+                    <label>
+                        <span class="form__labelText">
+                            Kwota do przeliczenia:*
+                        </span>
+                        <input class="form__field js-cash" type="number" step="0.01" name="amount" min="1" required
+                            placeholder="Podaj kwotę" autofocus>
+                    </label>
+                </P>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Waluta wejściowa:
+                        </span>
+                        <select class="form__field js-inputCurrency" name="inputCurrency" class="form__select">
+                            <option value="PLN">PLN - złoty polski</option>
+                            <option value="USD">USD - dolar amerykański</option>
+                            <option value="EUR">EUR - euro</option>
+                        </select>
+                    </label>
+                </p>
+                <p>
+                    <label>
+                        <span class="form__labelText">
+                            Waluta wyjściowa:
+                        </span>
+                        <select class="form__field js-outputCurrency" name="outputCurrency">
+                            <option value="PLN">PLN - złoty polski</option>
+                            <option value="USD" selected>USD - dolar amerykański</option>
+                            <option value="EUR">EUR - euro</option>
+                        </select>
+                    </label>
+                </p>
+                <p class="form__paragraph">
+                    Pola oznaczone " * " są wymagane!
+                </p>
+            </fieldset>
+            <p>
+                <button class="form__button js-form__button">Przelicz</button>
+            </p>
+            <div class="form__resultContainer js-resultContainer ">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">
+                        WYNIK
+                    </legend>
+                    <label class="form__label">
+                        <P>
+                            <strong class="form__result js-result"></strong>
+                        </P>
+                        <p class="form__paragraph form__paragraph--special">
+                            Kurs walut  pochodzi ze strony nbp.pl (14 grudzień 2022)
+                        </p>
+                    </label>
+                </fieldset>
+            </div>
+        </form>
+    </div>
+    <footer class="footer">
+     <p class="footerText">Made by Dawid Mazirz</p>  
+    </footer>
+
+</body>
+
+</html>

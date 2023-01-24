@@ -1,0 +1,24 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+.footer {
+  margin-top: 30px;
+  padding: 10px;
+  background-color: brown;
+  padding-bottom: 15px;
+  margin-bottom: 10px;
+}
+
+.footerText {
+  color: hsl(200, 20%, 94%);
+  font-style: oblique;
+  font-weight: bolder;
+  font-size: large;
+  padding: 5px;
+}
