@@ -12,6 +12,8 @@ html {
   max-width: 1000px;
   margin: auto;
   text-align: center;
-  background-color: rgb(240, 233, 233);
+  background-image: url("../images/dollar.jpg");
+  background-size: 200px;
+  background-repeat: repeat;
   font-family: "Lato", sans-serif;
 }
